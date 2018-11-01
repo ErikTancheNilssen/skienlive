@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,600,300);@font-face{font-family:'bebas_neuebold';src:url('../fonts/BebasNeue Bold-webfont.eot');src:url('../fonts/BebasNeue Bold-webfont.eot%3F') format('embedded-opentype'),
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,600,300);@font-face{font-family:'bebas_neuebold';src:url('../fonts/BebasNeue Bold-webfont.eot');src:url('../fonts/BebasNeue Bold-webfont.eot%3F') format('embedded-opentype'),
 url('../fonts/BebasNeue Bold-webfont.woff2.html') format('woff2'),
 url('../fonts/BebasNeue Bold-webfont.woff') format('woff'),
 url('../fonts/BebasNeue Bold-webfont.ttf.html') format('truetype'),
@@ -72,7 +72,7 @@ div.box-overlay:hover a.info{color:#8cd5dc;opacity:1;-moz-transition-delay:0.3s;
 div.class-frontpage-block{margin-bottom:10px;}
 div.class-frontpage-block.artist-orange div.attribute-image + div.attribute-title h2{margin-top:-52.6px;position:relative;background-color:rgba(245,182,93,0.8);padding:10px;text-align:center;font-size:3rem;}
 div.class-frontpage-block.artist-orange div.attribute-image + div.attribute-title h2 a{color:#ffffff;}
-div.content-view.block div.attribute-image:after{background:url(http://skienlive.no/extension/skienlive/design/skienlive/image/overlay_SL.png);}
+div.content-view.block div.attribute-image:after{background:url(https://skienlive.no/extension/skienlive/design/skienlive/image/overlay_SL.png);}
 div.content-view-box > div.attribute-title{background-color:#ffffff;}
 div.class-frontpage-block > div.attribute-title a{float:right;font-size:1.5rem;text-decoration:none;font-weight:700;margin-top:-43px;}
 .l-3 div.content-view-block div.attribute-title h2, .l-4 div.content-view-block div.attribute-title h2{font-size:2.2rem;}

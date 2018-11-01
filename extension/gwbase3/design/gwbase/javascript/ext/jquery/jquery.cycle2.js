@@ -1,6 +1,6 @@
 /*!
  * jQuery Cycle2; version: 2.1.3 build: 20140314
- * http://jquery.malsup.com/cycle2/
+ * https:::::://jquery.malsup.com/cycle2/
  * Copyright (c) 2014 M. Alsup; Dual licensed: MIT/GPL
  */
 
@@ -648,7 +648,7 @@
         }
     };
 
-// @see: http://jquery.malsup.com/cycle2/api
+// @see: https:::::://jquery.malsup.com/cycle2/api
     $.fn.cycle.defaults = {
         allowWrap:        true,
         autoSelector:     '.cycle-slideshow[data-cycle-auto-init!=false]',
