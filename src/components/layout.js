@@ -73,7 +73,7 @@ const Layout = ({ children, bgColour }) => (
     `}
     render={data => (
         <ThemeProvider theme={theme}>
-            <PageLayout m={0} bg={bgColour}>
+            <PageLayout m={0} bg="p1">
                 <Header siteTitle={data.site.siteMetadata.title} />
                 <SLBG src={SL19} />
                 <TypographyStyle typography={typography} />
