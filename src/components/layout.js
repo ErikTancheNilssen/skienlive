@@ -1,10 +1,10 @@
-import React from "react"
+import React, {useState, useEffect} from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 import { TypographyStyle, GoogleFont } from 'react-typography'
 import { ThemeProvider } from 'styled-components';
 import styled, { withTheme } from 'styled-components';
-import { Box, Image } from 'rebass';
+import { Box, Image, Card } from 'rebass';
 
 import SL19  from '../images/SL-19.svg';
 import BG1  from '../images/bg/SL_001.png';
@@ -23,7 +23,7 @@ import Header from "./header";
 import Footer from "./footer";
 import typography from './typography'
 import theme from "../theme.js";
-import "./layout.css";
+import  "./layout.css";
 
 const backgrounds = [BG1, BG2, BG3, BG4, BG5, BG6, BG7, BG8, BG8, BG10, BG11];
 
@@ -31,11 +31,10 @@ const getBg = () => {
     return backgrounds[Math.floor(Math.random() * backgrounds.length)];
 }
 
-const PageLayout = styled(Box)`
+const PageLayout = styled(Card)`
     min-height: 100vh;
     overflow: hidden;
     position: relative;
-    background-image: url(${getBg()}) ;
 
     background-position: 50% 50%;
     background-size: cover;
@@ -58,35 +57,31 @@ const SLBG = styled(Image)`
     }
 `;
 
+let updates = -1; 
 
-
-const Layout = ({ children, bgColour }) => (
-    <StaticQuery
-    query={graphql`
-        query SiteTitleQuery {
-            site {
-                siteMetadata {
-                    title
-                }
-            }
-        }
-    `}
-    render={data => (
+const Layout = ({ children, bg, onClick }) => {
+    const [bgImage, setBg] = useState(null);
+    useEffect(() => {
+        if(updates < 0)
+            setBg(getBg());
+        updates++;
+    });
+    return (
         <ThemeProvider theme={theme}>
-            <PageLayout m={0} bg="p1">
-                <Header siteTitle={data.site.siteMetadata.title} />
+            <PageLayout onClick={() => {
+                onClick && onClick();
+                setBg(getBg());
+            }} m={0} backgroundImage={`url(${bgImage})`} bg={bg} >
                 <SLBG src={SL19} />
-                <TypographyStyle typography={typography} />
-                <GoogleFont typography={typography} />
+                <Header />
                 <main>{children}</main>
                 <footer>
                     <Footer></Footer>
                 </footer>
             </PageLayout>
         </ThemeProvider>
-    )}
-    />
-)
+    );
+}
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,

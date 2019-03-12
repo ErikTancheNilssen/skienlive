@@ -4,7 +4,7 @@ import gray from "gray-percentage"
 
 
 const typography = new Typography({
-    title: "Elk Glen",
+    title: "Skien Live",
     baseFontSize: "30px",
     baseLineHeight: 1.5,
     googleFonts: [

@@ -20,7 +20,8 @@ export default {
         p1,
         p2,
         p3,
-        p4
+        p4,
+        "white": "#FFFFFF"
     },
     space: [
         0, 4, 8, 13, 16, 32, 64, 128, 256

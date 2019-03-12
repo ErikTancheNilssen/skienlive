@@ -36,5 +36,5 @@ export const Date = (props) => (
 
 
 export const Text = (props) => (
-    <StyledText {...props} as="h3" fontSize={[41,41,40]} />
+    <StyledText {...props} as="h3" fontSize={[35,35,51]} />
 )

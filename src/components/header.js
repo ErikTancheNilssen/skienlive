@@ -23,11 +23,7 @@ const Left = styled(Box)`
 
 `;
 
-
-
-
-
-const Header = ({ siteTitle }) => (
+const Header = () => (
     <Flex flexDirection={["column", "column", "row"]} mx={[3,3,3,6]} mt={[4,4,4,6]} mb={6} as="header">
         <Left>
             <Image width={[200,200,350]} m={0} src={logo}/>
@@ -43,12 +39,5 @@ const Header = ({ siteTitle }) => (
     </Flex>
 )
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

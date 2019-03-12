@@ -1,2 +1,13 @@
-@import url("https://cloud.typography.com/7635694/6459212/css/fonts.css");
+body{
+    margin: 0;
+    body: 0;
+    font-family: "Knockout 26 A", "Knockout 26 B", "sans-serif";
+    font-size: 30px;
+    line-height: 1.5;
+    color: white;
+    letter-spacing: 2px;
+}
 
+a{
+    text-decoration: none;
+}
