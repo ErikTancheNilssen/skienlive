@@ -72,7 +72,7 @@ const Layout = ({ children, bg, onClick }) => {
                 onClick && onClick();
                 setBg(getBg());
             }} m={0} backgroundImage={`url(${bgImage})`} bg={bg} >
-                <SLBG src={SL19} />
+                <SLBG alt="SL'19" src={SL19} />
                 <Header />
                 <main>{children}</main>
                 <footer>

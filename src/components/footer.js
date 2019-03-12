@@ -22,16 +22,16 @@ const ButtonLink = styled.a`
 const Footer = ({ siteTitle }) => (
     <Flex flexDirection={["column", "column", "row"]} pt={8} m={[2,3,6]} mb={0}>
         <ButtonLink target="_blank" href="http://ta.no">
-            <Image height={70} p={4} src={TA}/>
+            <Image alt="TA" height={70} p={4} src={TA}/>
         </ButtonLink>
         <ButtonLink target="_blank" href="http://skienbrygge.no/">
-            <Image height={55}  p={4} src={SB}/>
+            <Image alt="Skienbrygge" height={55}  p={4} src={SB}/>
         </ButtonLink>
         <ButtonLink target="_blank" href="https://www.skagerakenergi.no/">
-            <Image width={160}  p={4} src={SE}/>
+            <Image alt="Skagerak Energi" width={160}  p={4} src={SE}/>
         </ButtonLink>
         <ButtonLink target="_blank" href="https://www.skien.kommune.no/">
-            <Image height={120}  p={4} src={SK}/>
+            <Image alt="Skien Kommune"  height={120}  p={4} src={SK}/>
         </ButtonLink>
     </Flex>
 
