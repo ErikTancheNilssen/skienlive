@@ -23,6 +23,10 @@ module.exports = {
         },
         {
             resolve: 'gatsby-plugin-styled-components',
+            options: {
+                "transpileTemplateLiterals": false,
+                "displayName": false
+            }
         },
         {
             resolve: `gatsby-plugin-manifest`,

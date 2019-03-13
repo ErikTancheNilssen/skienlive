@@ -1,7 +1,7 @@
 import React from "react"
 import { Heading } from 'rebass';
-import styled  from 'styled-components';
-
+import styled, { withTheme } from 'styled-components';
+import { setLightness } from 'polished';
 
 
 const Title = styled(Heading)`
@@ -13,14 +13,14 @@ const Title = styled(Heading)`
 const DateText = styled(Heading)`
     text-transform: uppercase;
     line-height: .8;
-    opacity: 0.75;
+    transition: color 2s ease;
     text-align: left;
 `;
 
 const StyledText = styled(Heading)`
     text-transform: uppercase;
     line-height: .8;
-    opacity: 0.75;
+    transition: color 2s ease;
 `;
 
 
@@ -30,9 +30,9 @@ export const Artist = (props) => (
 )
 
 
-export const Date = (props) => (
-    <DateText {...props} as="h4" fontSize={[50,50,71]} />
-)
+export const Date = withTheme((props) => (
+    <DateText {...props} color={setLightness(0.8, props.theme.mainColor)} as="h4" fontSize={[50,50,71]} />
+))
 
 
 export const Text = (props) => (
