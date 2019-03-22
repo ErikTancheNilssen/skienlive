@@ -1,0 +1,100 @@
+/* PRINT CSS - 2013 */
+
+body, div#page, header, section#content-center
+{   
+    background-color: transparent;
+    background-image: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+body
+{
+    font-size: 10pt;
+}
+
+nav#extramenu, div#searchbox, div#path-bg, div#topmenu-bg, div#content-top-bg, section#content-left, section#content-right, div#footer-bg, div#credits-bg
+{
+    display: none;
+}
+
+div#page, .page-width
+{
+    width: auto !important;
+}
+
+div#page
+{
+    box-shadow: none;
+}
+
+header
+{
+    height: auto;
+}
+
+div#logo
+{
+    margin: 0;
+    float: none;
+    position: static;
+}
+
+div#logo h1
+{
+    font-size: 2em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #000000;
+}
+
+div#logo a, div#logo span.image
+{
+    width: auto;
+    height: auto;
+    display: inline;
+}
+
+div#logo span.image
+{
+    background: none;
+}
+
+div#logo a span.text
+{
+    display: inline;
+}
+
+div#content-left-area, div#content-right-area
+{
+    padding: 0;
+    border: none;
+}
+
+div#content-center-position
+{
+    float: none;
+}
+
+section#content-center
+{
+    padding: 0 !important;
+}
+
+div.row, div.row div.col
+{
+    width: auto;
+    margin-left: 0;
+}
+
+div.row div.col
+{
+    margin-right: 20px;
+}
+
+h1, h2, h3, h4, h5, h6, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a, a
+{
+    color: #000000;
+    text-decoration: none;
+}
