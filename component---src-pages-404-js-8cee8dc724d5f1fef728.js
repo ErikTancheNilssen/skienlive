@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[6],{142:function(e,t,n){"use strict";n.r(t);var a=n(0),l=n.n(a),r=n(186),s=n(161);t.default=function(){return l.a.createElement(r.a,null,l.a.createElement(s.a,{title:"404: Not found"}),l.a.createElement("h1",null,"UPS!"),l.a.createElement("p",null,"Siden kan være flyttet, eller du kan ha skrevet en nettadresse som ikke eksisterer."))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-8cee8dc724d5f1fef728.js.map
