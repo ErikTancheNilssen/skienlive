@@ -6,6 +6,7 @@ import SEO from "../components/seo";
 import styled, { withTheme } from "styled-components";
 import { setLightness } from "polished";
 import Helmet from "react-helmet";
+import { Link } from "gatsby";
 
 const One = styled(Box)`
   text-align: right;
@@ -30,18 +31,32 @@ const Body = withTheme(({ theme }) => (
     <Row mb={[2, 3, 6]}>
       <One my={3} mx="auto" p={5}>
         <Date ml={7}>14. juni</Date>
-        <Artist mr={3}>Skambankt</Artist>
-        <Artist>The Dogs</Artist>
-        <Artist mr={[3, 3, 6]}>El Kayenne</Artist>
+        <Artist mr={3}>
+          <Link to="skambankt">Skambankt</Link>
+        </Artist>
+        <Artist>
+          <Link to="thedogs">The Dogs</Link>
+        </Artist>
+        <Artist mr={[3, 3, 6]}>
+          <Link to="el-kayenne">El Kayenne</Link>
+        </Artist>
       </One>
     </Row>
     <Row mb={7}>
       <Two m={[1, 2, 4]} p={[2, 3, 6]}>
         <Date>15. juni</Date>
-        <Artist ml={[2, 3, 6]}>Dagny</Artist>
-        <Artist mr={[2, 3, 6]}>Datarock</Artist>
-        <Artist>Amanda Delara</Artist>
-        <Artist ml={[2, 3, 6]}>Diskotek</Artist>
+        <Artist ml={[2, 3, 6]}>
+          <Link to="dagny">Dagny</Link>
+        </Artist>
+        <Artist mr={[2, 3, 6]}>
+          <Link to="datarock">Datarock</Link>
+        </Artist>
+        <Artist>
+          <Link to="amanda">Amanda Delara</Link>
+        </Artist>
+        <Artist ml={[2, 3, 6]}>
+          <Link to="diskotek">Diskotek</Link>
+        </Artist>
         <Text mt={7} ml={[2, 4, 8]}>
           Flere artister slippes snart...
         </Text>

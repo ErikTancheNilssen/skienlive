@@ -23,7 +23,9 @@ const colors = {
   p3,
   p4,
   gray: "#222222",
-  body: "rgba(0,0,0,0.85)"
+  lightGray: "rgba(255,255,255,0.50)",
+  body: "rgba(0,0,0,0.85)",
+  lightBody: "rgba(255,255,255,0.85)"
 };
 
 const fontSizes = [16.77, 21, 29.3, 33.5, 41.93, 50.3, 71.28, 100, 134, 201];
