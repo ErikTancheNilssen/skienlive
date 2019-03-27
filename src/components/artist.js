@@ -28,16 +28,23 @@ const StyledText = styled(Heading)`
   transition: color 2s ease;
 `;
 
+const BodyText = styled(ReBassText)`
+  font-family: Vollkorn-Regular;
+  font-size: 20.97px;
+  color: rgba(0, 0, 0, 0.87);
+  letter-spacing: 0.25px;
+`;
+
 export const Artist = withTheme(props => (
   <Title {...props} fontSize={[100, 100, 201]} />
 ));
 
 export const P = props => (
-  <ReBassText
+  <BodyText
     {...props}
     mb={5}
     mt={2}
-    fontSize={[1, 1, 1, 2]}
+    fontSize={[1]}
     color="body"
     fontFamily="Vollkorn"
   />

@@ -79,7 +79,7 @@ const Body = ({ data, artist, content }) => (
       </Bottom>
     </ArtistCard>
     <TextArea py={6} px={[3, 3, 3, 6]} bg="white">
-      <Close to="/" title="Lukk">
+      <Close replace to="/" title="Lukk">
         &times;
       </Close>
 
