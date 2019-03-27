@@ -33,7 +33,7 @@ const Body = () => (
         artist={
           <>
             <Date color="p3">15. JUNI</Date>
-            <TitleArtist color="p3">The Dogs</TitleArtist>
+            <TitleArtist color="p3">Datarock</TitleArtist>
           </>
         }
         content={

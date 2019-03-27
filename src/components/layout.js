@@ -1,6 +1,6 @@
 import React from "react";
 
-import styled from "styled-components";
+import styled, { withTheme } from "styled-components";
 import { Image, Card } from "rebass";
 import { ThemeProvider } from "styled-components";
 
@@ -38,46 +38,25 @@ const SLBG = styled(Image)`
   }
 `;
 
-class Layout extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = { theme: defaultTheme() };
-  }
+export default withTheme(({ theme, children }) => (
+  <PageLayout
+    m={0}
+    backgroundImage={theme.bg ? `url(${theme.bg})` : null}
+    bg={theme.mainColor}
+  >
+    <Helmet>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cloud.typography.com/7635694/7339212/css/fonts.css"
+      />
+    </Helmet>
 
-  componentDidMount() {
-    this.setState({
-      theme: updatedTheme()
-    });
-  }
-
-  render() {
-    const { children } = this.props;
-    const { theme } = this.state;
-    return (
-      <ThemeProvider theme={theme}>
-        <PageLayout
-          m={0}
-          backgroundImage={theme.bg ? `url(${theme.bg})` : null}
-          bg={theme.mainColor}
-        >
-          <Helmet>
-            <link
-              rel="stylesheet"
-              type="text/css"
-              href="https://cloud.typography.com/7635694/7339212/css/fonts.css"
-            />
-          </Helmet>
-
-          <SLBG alt="SL'19" src={theme.SL19} />
-          <Header />
-          <main>{children}</main>
-          <footer>
-            <Footer />
-          </footer>
-        </PageLayout>
-      </ThemeProvider>
-    );
-  }
-}
-
-export default Layout;
+    <SLBG alt="SL'19" src={theme.SL19} />
+    <Header />
+    <main>{children}</main>
+    <footer>
+      <Footer />
+    </footer>
+  </PageLayout>
+));
