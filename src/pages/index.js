@@ -42,7 +42,7 @@ const Body = withTheme(({ theme }) => (
         </Artist>
       </One>
     </Row>
-    <Row mb={7}>
+    <Row mb={5}>
       <Two m={[1, 2, 4]} p={[2, 3, 6]}>
         <Date>15. juni</Date>
         <Artist ml={[2, 3, 6]}>

@@ -36,7 +36,7 @@ const BodyText = styled(ReBassText)`
 `;
 
 export const Artist = withTheme(props => (
-  <Title {...props} fontSize={[100, 100, 201]} />
+  <Title {...props} fontSize={[80, 80, 100, 201]} />
 ));
 
 export const P = props => (
