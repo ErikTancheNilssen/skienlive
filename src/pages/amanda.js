@@ -28,7 +28,7 @@ const Body = () => (
     `}
     render={data => (
       <ArtistPage
-        title="Amanda"
+        title="Amanda Delara"
         data={data}
         artist={
           <>

@@ -39,55 +39,43 @@ const Body = () => (
         content={
           <>
             <P>
-              Skambankts sjette album,{" "}
-              <Text as="bold" color="p1">
-                <q>Horisonten Brenner</q>
-              </Text>{" "}
-              presenterer en ytterst smakfull og ektefølt rockeskive med en
-              sterk groovefaktor. I løpet av platas 9 spor blir du dratt gjennom
-              rivende trommeslageri med de tyngste fire flate som finnes,
-              vokalspor som får strupen til å krible, og gitarer som røsker
-              hardere enn vestavinden på Jæren. Skiva opererer med groove og
-              tyngde som hovedpremiss, men den klangfulle vokalen kontrasterer
-              riffinga, og manifesterer en avhengighetsskapende og moderne
-              blanding som får skjegget til å gro hos både kvinner og menn!
-            </P>
-            <P>
               Skambankt er et kompromissløst hardrockband fra Jæren i Rogaland,
               med lengre fartstid enn de fleste andre band som starter opp som
-              unge tenåringer. Bandet har utallige konsertdatoer og 5 skiver bak
-              ryggen. Helt siden deres andre skive,{" "}
+              unge tenåringer. Som en av Norges pionerer innen sjangeren har
+              bandet utallige konsertdatoer og 7 skiver i ryggen. Helt siden
+              deres andre skive,{" "}
               <Text as="bold" color="p1">
-                <q>Eliksir</q>
+                «Eliksir»
               </Text>
-              , har de okkupert topp 10-pallen på Norges nasjonale hitlister, og
-              tok førsteplassen med deres forrige skive{" "}
+              , har de okkupert topp 10-pallen på Norges nasjonale hitlister og
+              tok førsteplassen med albumet{" "}
               <Text as="bold" color="p1">
-                <q>Sirene</q>
+                «Sirene»
               </Text>{" "}
-              i 2014. I 2013 stakk de av med Spotify-prisen for{" "}
+              i 2014. En skive som forøvrig ble mottatt med hele 15 femmere. I
+              2013 stakk de av med Spotify-prisen for{" "}
               <Text as="bold" color="p1">
-                <q>årets innovatør</q>
+                «årets innovatør»
               </Text>{" "}
               under Spellemannprisen.
             </P>
             <P>
-              Skambankt er i dag regnet som en av Norges pionerer innen
-              sjangeren, med et repertoar på 5, snart 6, skiver og én EP å
-              trollbinde publikum med.
+              I fjor gjorde Skambankt storslått come-back med albumet{" "}
+              <Text as="bold" color="p1">
+                «Horisonten Brenner»
+              </Text>{" "}
+              , etterfulgt av omfattende Norges-turné, utsolgte konserter (blant
+              annet på Rockefeller) og slipp av livealbumet{" "}
+              <Text as="bold" color="p1">
+                «Live At Rockefeller 2018»
+              </Text>{" "}
+              for å nevne noen høydepunkter.
             </P>
             <P>
               Skambankt har opptrådt på mange av de største festivalene i
               Norden, og har blitt invitert hele tre ganger til
-              Roskildefestivalen. Nå venter ny turné, ny festivalsommer og nye
-              muligheter.
-            </P>
-            <P>
-              Skambankts siste album,{" "}
-              <Text as="bold" color="p1">
-                <q>Sirene</q>
-              </Text>{" "}
-              (2014), ble mottatt med hele 15 femmere
+              Roskildefestivalen. Med ny dobbelsingel ute legger de nå ut på ny
+              turné, ny festivalsommer og nye muligheter.
             </P>
             <Heading fontFamily="Vollkorn" fontSize={2}>
               BANDMEDLEMMER:

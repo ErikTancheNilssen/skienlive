@@ -7,7 +7,10 @@ const Title = styled(Heading)`
   text-transform: uppercase;
   line-height: 0.8;
   a {
-    color: white;
+    color: rgba(255, 255, 255, 1);
+    display: block;
+    line-height: 0.8;
+    transition: 0.25s color;
   }
 
   a:hover {
